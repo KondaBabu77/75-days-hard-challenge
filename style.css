@@ -1,0 +1,123 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 195, 255, 0.2);
+}
+
+h1 {
+    color: #00c3ff;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+h3 {
+    color: #00c3ff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Task container */
+.task-container {
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+label {
+    display: block;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 12px;
+    color: white;
+    background-color: #00c3ff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #008ecf;
+    transform: scale(1.05);
+}
+
+.update-btn {
+    background-color: #4CAF50;
+}
+
+.update-btn:hover {
+    background-color: #3d8b40;
+}
+
+.reset-btn {
+    background-color: #ff4c4c;
+}
+
+.reset-btn:hover {
+    background-color: #d43f3f;
+}
+
+/* Success Banner */
+.success-banner {
+    background-color: #4CAF50;
+    padding: 18px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .dashboard-container {
+        width: 90%;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 14px;
+    }
+}
